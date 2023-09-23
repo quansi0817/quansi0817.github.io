@@ -1,7 +1,165 @@
-<!-- ToDoListProject Section -->
-<section id="todolistproject">
-  <h2>ToDoListProject</h2>
-  <p>This is a To-Do List application for managing daily tasks...</p>
-  <a href="https://github.com/quansi0817/ToDoListProject" target="_blank">View on GitHub</a>
-  <!-- Add more details or links as needed -->
-</section>
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #50b3a2;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #bbb 1px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        header li {
+            float: left;
+            display: block;
+            padding: 0 15px;
+            font-size: 16px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .main {
+            padding: 30px 0;
+            background: #fff;
+        }
+
+        .main h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .project div {
+            width: 30%;
+        }
+
+        .project img {
+            width: 100%;
+        }
+
+        .project-details {
+            padding: 15px;
+        }
+
+        .project-details h3 {
+            margin: 0 0 10px;
+        }
+
+        .project-details p {
+            margin: 0 0 10px;
+        }
+
+        .project-details a {
+            display: inline-block;
+            background: #50b3a2;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-details a:hover {
+            background: #e8491d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #50b3a2;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="branding">
+            <h1><span class="highlight">我的</span> 作品集</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="#">主页</a></li>
+                <li><a href="#">关于我</a></li>
+                <li><a href="#">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <h1>我的项目</h1>
+        <div class="project">
+            <div>
+                <img src="project-image-url" alt="Project Image">
+            </div>
+            <div class="project-details">
+                <h3>ToDoListProject</h3>
+                <p>This is a To-Do List application for managing daily tasks. Users can add, edit, and delete tasks, mark tasks as completed, and filter and sort tasks by different categories.</p>
+                <p><strong>Key Technologies:</strong> JavaScript, HTML, CSS, React, Redux, MongoDB, Webpack, Babel, npm</p>
+                <a href="https://github.com/quansi0817/ToDoListProject" target="_blank">查看源码</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>我的作品集 &copy; 2023. 欢迎访问我的 <a href="https://github.com/quansi0817" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+
+</html>
