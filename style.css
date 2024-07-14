@@ -1,0 +1,165 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+header {
+    background: #2C3E50; 
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: #bbb 1px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+header .highlight {
+    color: #3498DB;
+    font-weight: bold;
+}
+
+.header-button {
+    display: inline-block;
+    background: #3498DB; 
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header-button:hover {
+    background: #2C3E50; 
+}
+
+.main {
+    padding: 30px 0;
+    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    text-align: center;
+    /* text-transform: uppercase; */
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center; 
+}
+
+.intro h2 {
+    color: #2C3E50;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.intro p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #5680bb;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    text-align: left;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.project div {
+    width: 45%;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Smooth transition for image transformations */
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Increase the size of the image to 110% of its original when hovered */
+}
+
+.project-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h3 {
+    margin: 0 0 10px;
+    color: #2C3E50;
+}
+
+.project-details p {
+    margin: 0 0 10px;
+}
+
+.project-details a {
+    display: inline-block;
+    background: #2C3E50;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-details a:hover {
+    background: #3498DB;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #2C3E50;
+    color: #fff;
+}
+
+footer a {
+    color: #3498DB;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: text-decoration 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
