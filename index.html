@@ -12,98 +12,110 @@
             images.forEach(img => {
                 img.onclick = function() {
                     if (this.classList.contains('clicked')) {
-                        this.style.transform = 'scale(1)'; // Reset to original size
+                        this.style.transform = 'scale(1)';
                         this.classList.remove('clicked');
                     } else {
-                        this.style.transform = 'scale(1.2)'; // Scale to 120% on click
+                        this.style.transform = 'scale(1.2)';
                         this.classList.add('clicked');
                     }
                 };
             });
         });
     </script>
-    
 </head>
 
 <body>
     <header>
-        <h1><span class="highlight">Sichao Quan</span> Portfolio</h1>
-        <nav>
-            <a href="https://www.linkedin.com/in/sichao-quan-279395281/" target="_blank" class="header-button" aria-label="Connect with me on LinkedIn">LinkedIn</a>
-            <a href="https://github.com/quansi0817/" target="_blank" class="header-button" aria-label="Visit my GitHub repository">GitHub</a>
-        </nav>
+        <div class="main-content">
+            <h1><span class="highlight">Sichao Quan</span> Portfolio</h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/sichao-quan-279395281/" target="_blank" class="header-button" aria-label="Connect with me on LinkedIn">LinkedIn</a>
+                <a href="https://github.com/quansi0817/" target="_blank" class="header-button" aria-label="Visit my GitHub repository">GitHub</a>
+            </nav>
+        </div>
     </header>
-    <section class="intro">
-        <div class="container">
+
+    <main class="main-content">
+        <section class="intro">
             <h2>Hello!</h2>
             <p>I am a student of Software Development & Network Engineering at Sheridan College, with a passion for projects that make life more convenient. Eager to learn and driven by my passion for technology, I enjoy diving into Java, Python, cloud computing, and networking!</p>
-    </div>
-        </div>
-    </section>
-    
-    <section class="main">
-        <h1>My Projects</h1>
-
-        <article class="project">
-            <div>
-                <img src="./rental_price_predictor.jpg" alt="rental_price_predictor">
-            </div>
-            <div class="project-details">
-                <h3>Canada Rental Price Predictor</h3>
-                <p>This is a web application designed to predict rental prices and area sizes in various cities across Canada. Users can input details like province, city, property type, number of bedrooms, and pet policies to get real-time predictions. The application also visualizes price and area distributions to provide deeper insights into the rental market trends of specific regions.</p>
-        <p><strong>Key Technologies:</strong> Python, Pandas, Scikit-Learn, Dash, Plotly, HTML, CSS</p>
-        <a href="https://github.com/quansi0817/Rental-Price-Forecasting-Dashboard-for-Canada" target="_blank" aria-label="View Canada Rental Price Predictor project on GitHub">View on GitHub</a>
-            </div>
-        </article>
-        <article class="project">
-            <div>
-                <img src="./caps.jpg" alt="Project Image of Caps Lock Indicator">
-            </div>
-            <div class="project-details">
-                <h3>"Caps Lock Indicator" Project</h3>
-                <p>This MacOS application shows the Caps Lock status directly in the menu bar, displaying a purple circle when active, and a white circle when inactive.</p>
-                <p><strong>Key Technologies:</strong> Python, rumps, Quartz.CoreGraphics</p>
-                <a href="https://github.com/quansi0817/Cap_Lock_indicator" target="_blank" aria-label="View Caps Lock Indicator project on GitHub">View on GitHub</a>
-            </div>
-        </article>
-        <article class="project">
-            <div>
-                <img src="./photo.png" alt="Project Image of ToDoList">
-            </div>
-            <div class="project-details">
-                <h3>"ToDoList" Project</h3>
-                <p>This is a To-Do List application for managing daily tasks. Users can add, edit, and delete tasks, mark tasks as completed, and filter and sort tasks by different categories.</p>
-                <p><strong>Key Technologies:</strong> JavaFX, Java, HTML, CSS, JSON, File I/O</p>
-                <a href="https://github.com/quansi0817/ToDoListProject" target="_blank" aria-label="View ToDoList project on GitHub">View on GitHub</a>
-            </div>
-        </article>
-
-        <article class="project">
-            <div>
-                <img src="./photo2.png" alt="Project Image of TrailGo App Design">
-            </div>
-            <div class="project-details">
-                <h3>"TrailGo" App Design</h3>
-                <p>In an app design project, "TrailGo" was developed to address the increasing interest in hiking. Using a data-driven method with surveys, we pinpointed features such as trail searches, real-time recording, and geo-tagged photos. After initial testing with users, we identified areas for refinement, ensuring an intuitive experience for hikers.</p>
-                <p><strong>Key Technologies:</strong> Adobe XD, Excel, Google Forms</p>
-                <a href="https://xd.adobe.com/view/b872281d-5659-4933-a2ac-7969b9d76c55-ed21/?fullscreen&hints=off" target="_blank" aria-label="View TrailGo App Design Mockup on Adobe XD">View Adobe XD Mockup</a>
-            </div>
-        </article>
+        </section>
         
-        <article class="project">
+        <section class="main">
+            <h1>My Projects</h1>
+            <div class="projects-container">
+                <article class="project">
+                    <div class="project-image">
+                        <img src="./rental_price_predictor.jpg" alt="rental_price_predictor">
+                    </div>
+                    <div class="project-details">
+                        <h3>Canada Rental Price Predictor</h3>
+                        <p>This is a web application designed to predict rental prices and area sizes in various cities across Canada. Users can input details like province, city, property type, number of bedrooms, and pet policies to get real-time predictions. The application also visualizes price and area distributions to provide deeper insights into the rental market trends of specific regions.</p>
+                        <p><strong>Key Technologies:</strong> Python, Pandas, Scikit-Learn, Dash, Plotly, HTML, CSS</p>
+                        <a href="https://github.com/quansi0817/Rental-Price-Forecasting-Dashboard-for-Canada" target="_blank" aria-label="View Canada Rental Price Predictor project on GitHub">View on GitHub</a>
+                    </div>
+                </article>
+                
+                <div class="projects-container">
+                <article class="project">
+                    <div class="project-image">
+                        <img src="./caps.jpg" alt="Project Image of Caps Lock Indicator">
+                    </div>
+                    <div class="project-details">
+                        <h3>"Caps Lock Indicator" Project</h3>
+                        <p>This MacOS application shows the Caps Lock status directly in the menu bar, displaying a purple circle when active, and a white circle when inactive.</p>
+                        <p><strong>Key Technologies:</strong> Python, rumps, Quartz.CoreGraphics</p>
+                        <a href="https://github.com/quansi0817/Cap_Lock_indicator" target="_blank" aria-label="View Caps Lock Indicator project on GitHub">View on GitHub</a>
+                    </div>
+                </article>
+            </div> 
+
+            <div class="projects-container">
+                <article class="project">
+                    <div class="project-image">
+                        <img src="./photo.png" alt="Project Image of ToDoList">
+                    </div>
+                    <div class="project-details">
+                        <h3>"ToDoList" Project</h3>
+                        <p>This is a To-Do List application for managing daily tasks. Users can add, edit, and delete tasks, mark tasks as completed, and filter and sort tasks by different categories.</p>
+                        <p><strong>Key Technologies:</strong> JavaFX, Java, HTML, CSS, JSON, File I/O</p>
+                        <a href="https://github.com/quansi0817/ToDoListProject" target="_blank" aria-label="View ToDoList project on GitHub">View on GitHub</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-container">
+                <article class="project">
+                    <div class="project-image">
+                        <img src="./photo2.png" alt="Project Image of TrailGo App Design">
+                    </div>
+                    <div class="project-details">
+                        <h3>"TrailGo" App Design</h3>
+                        <p>In an app design project, "TrailGo" was developed to address the increasing interest in hiking. Using a data-driven method with surveys, we pinpointed features such as trail searches, real-time recording, and geo-tagged photos. After initial testing with users, we identified areas for refinement, ensuring an intuitive experience for hikers.</p>
+                        <p><strong>Key Technologies:</strong> Adobe XD, Excel, Google Forms</p>
+                        <a href="https://xd.adobe.com/view/b872281d-5659-4933-a2ac-7969b9d76c55-ed21/?fullscreen&hints=off" target="_blank" aria-label="View TrailGo App Design Mockup on Adobe XD">View Adobe XD Mockup</a>
+                    </div>
+                </article>
+            </div>
+
+
+            <div class="projects-container">
+                <article class="project">
+                    <div class="project-image">
+                        <img src="./photo3.jpg" alt="Project Image of CMS Project">
+                    </div>
+                    <div class="project-details">
+                        <h3>"Customer Management System (CMS)" Project</h3>
+                        <p>The "Customer Management System" (CMS) optimizes customer management and sales processes using Spring Boot for robust backend operations and HTML/CSS for a responsive user interface. Featuring role-based access, it allows admins comprehensive control over data, while sales personnel access only pertinent customer information. Initial testing helped refine its features, enhancing its usability and effectiveness.</p>
+                        <p><strong>Key Technologies:</strong> Spring Boot, HTML, CSS</p>
+                        <a href="https://github.com/quansi0817/CMS-PROJECT/tree/main" target="_blank" aria-label="View CMS project on GitHub">View on GitHub</a>
+                    </div>
+                </article>
+            </div>
+
             
-                <div>
-                    <img src="./photo3.jpg" alt="Project Image of CMS Project">
-                </div>
-            <div class="project-details">
-                <h3>"Customer Management System (CMS)" Project</h3>
-                <p>The "Customer Management System" (CMS) optimizes customer management and sales processes using Spring Boot for robust backend operations and HTML/CSS for a responsive user interface. Featuring role-based access, it allows admins comprehensive control over data, while sales personnel access only pertinent customer information. Initial testing helped refine its features, enhancing its usability and effectiveness.</p>
-                <p><strong>Key Technologies:</strong> Spring Boot, HTML, CSS</p>
-                <a href="https://github.com/quansi0817/CMS-PROJECT/tree/main" target="_blank" aria-label="View CMS project on GitHub">View on GitHub</a>
-            </div>
-        
-        </article>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <p>Sichao Quan Portfolio &copy; 2023. Visit my <a href="https://github.com/quansi0817" target="_blank" aria-label="Visit my GitHub profile">GitHub</a></p>
@@ -111,4 +123,3 @@
 </body>
 
 </html>
-
