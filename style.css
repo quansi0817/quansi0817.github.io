@@ -94,7 +94,7 @@ header .highlight {
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
+} 
 
 .project {
     display: flex;
