@@ -4,137 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sichao Quan Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.project img');
-            images.forEach(img => {
-                img.onclick = function() {
-                    if (this.classList.contains('clicked')) {
-                        this.style.transform = 'scale(1)';
-                        this.classList.remove('clicked');
-                    } else {
-                        this.style.transform = 'scale(1.2)';
-                        this.classList.add('clicked');
-                    }
-                };
-            });
-        });
-    </script>
+    <title>Sichao Quan | Portfolio</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="main-content">
-            <h1><span class="highlight">Sichao Quan</span> Portfolio</h1>
-            <nav>
-                <a href="https://www.linkedin.com/in/sichao-quan-279395281/" target="_blank" class="header-button" aria-label="Connect with me on LinkedIn">LinkedIn</a>
-                <a href="https://github.com/quansi0817/" target="_blank" class="header-button" aria-label="Visit my GitHub repository">GitHub</a>
-            </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Sichao<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="main-content">
-        <section class="intro">
-            <h2>Hello!</h2>
-            <p>I am a student of Software Development & Network Engineering at Sheridan College, with a passion for projects that make life more convenient. Eager to learn and driven by my passion for technology, I enjoy diving into Java, Python, cloud computing, and networking!</p>
-        </section>
-        
-        <section class="main">
-            <h1>My Projects</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Hi, I'm <span class="highlight">Sichao Quan</span></h1>
+            <h2>Software Development & Network Engineering Student</h2>
+            <p>Passionate about creating convenient solutions with Java, Python, and Cloud Computing.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
 
-            <div class="projects-container">
-                <article class="project">
-                    <div class="project-image">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a student of <strong>Software Development & Network Engineering at Sheridan College</strong>, with a passion for projects that make life more convenient. Eager to learn and driven by my passion for technology, I enjoy diving into Java, Python, cloud computing, and networking!</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-item"><i class="fas fa-cloud"></i> Cloud Computing</div>
+                    <div class="skill-item"><i class="fas fa-network-wired"></i> Networking</div>
+                    <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</div>
+                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-img">
                         <img src="./Anomaly_Injection_Process_With_GANs_Training.jpg" alt="EV Battery Anomaly Detection">
                     </div>
-                    <div class="project-details">
-                        <h3>Generative Anomaly Detection for EV Batteries</h3>
-                        <p>This project uses Generative Adversarial Networks (GANs) to detect anomalies in electric vehicle (EV) battery data. Collaborating with Rogers as part of a school initiative, the project tested GANs on data from the Kia EV6, with artificially injected anomalies at varying levels (25%, 50%, 75%). The study also included a comparison with traditional Multivariate Anomaly Detection methods.</p>
-                        <p><strong>Key Technologies:</strong> Python, TensorFlow/Keras, Scikit-Learn, Pandas, Matplotlib</p>
-                        <a href="https://github.com/quansi0817/Generative-Anomaly-Detection-for-Electric-Vehicle-Batteries/blob/main/README.ipynb" target="_blank" aria-label="View Generative Anomaly Detection for EV Batteries project on GitHub">View on GitHub</a>
+                    <div class="project-info">
+                        <h3>Generative Anomaly Detection</h3>
+                        <p>Using GANs to detect anomalies in EV battery data. Collaborated with Rogers to test on Kia EV6 data with injected anomalies.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/quansi0817/Generative-Anomaly-Detection-for-Electric-Vehicle-Batteries/blob/main/README.ipynb" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
                     </div>
                 </article>
-            
-            
-            <div class="projects-container">
-                <article class="project">
-                    <div class="project-image">
-                        <img src="./rental_price_predictor.jpg" alt="rental_price_predictor">
-                    </div>
-                    <div class="project-details">
-                        <h3>Canada Rental Price Predictor</h3>
-                        <p>This is a web application designed to predict rental prices and area sizes in various cities across Canada. Users can input details like province, city, property type, number of bedrooms, and pet policies to get real-time predictions. The application also visualizes price and area distributions to provide deeper insights into the rental market trends of specific regions.</p>
-                        <p><strong>Key Technologies:</strong> Python, Pandas, Scikit-Learn, Dash, Plotly, HTML, CSS</p>
-                        <a href="https://github.com/quansi0817/Rental-Price-Forecasting-Dashboard-for-Canada" target="_blank" aria-label="View Canada Rental Price Predictor project on GitHub">View on GitHub</a>
-                    </div>
-                </article>
-                
-                <div class="projects-container">
-                <article class="project">
-                    <div class="project-image">
-                        <img src="./caps.jpg" alt="Project Image of Caps Lock Indicator">
-                    </div>
-                    <div class="project-details">
-                        <h3>"Caps Lock Indicator" Project</h3>
-                        <p>This MacOS application shows the Caps Lock status directly in the menu bar, displaying a purple circle when active, and a white circle when inactive.</p>
-                        <p><strong>Key Technologies:</strong> Python, rumps, Quartz.CoreGraphics</p>
-                        <a href="https://github.com/quansi0817/Cap_Lock_indicator" target="_blank" aria-label="View Caps Lock Indicator project on GitHub">View on GitHub</a>
-                    </div>
-                </article>
-            </div> 
 
-            <div class="projects-container">
-                <article class="project">
-                    <div class="project-image">
-                        <img src="./photo.png" alt="Project Image of ToDoList">
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="./rental_price_predictor.jpg" alt="Canada Rental Price Predictor">
                     </div>
-                    <div class="project-details">
-                        <h3>"ToDoList" Project</h3>
-                        <p>This is a To-Do List application for managing daily tasks. Users can add, edit, and delete tasks, mark tasks as completed, and filter and sort tasks by different categories.</p>
-                        <p><strong>Key Technologies:</strong> JavaFX, Java, HTML, CSS, JSON, File I/O</p>
-                        <a href="https://github.com/quansi0817/ToDoListProject" target="_blank" aria-label="View ToDoList project on GitHub">View on GitHub</a>
+                    <div class="project-info">
+                        <h3>Rental Price Predictor</h3>
+                        <p>Web app to predict rental prices in Canada. Input details like city and bedrooms to get real-time predictions and visualizations.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Dash</span>
+                            <span>Plotly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/quansi0817/Rental-Price-Forecasting-Dashboard-for-Canada" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
                     </div>
                 </article>
-            </div>
 
-            <div class="projects-container">
-                <article class="project">
-                    <div class="project-image">
-                        <img src="./photo2.png" alt="Project Image of TrailGo App Design">
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="./caps.jpg" alt="Caps Lock Indicator">
                     </div>
-                    <div class="project-details">
+                    <div class="project-info">
+                        <h3>Caps Lock Indicator</h3>
+                        <p>MacOS app showing Caps Lock status in the menu bar. Displays a visual indicator for active/inactive states.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>rumps</span>
+                            <span>MacOS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/quansi0817/Cap_Lock_indicator" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="./photo.png" alt="ToDoList Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>ToDoList App</h3>
+                        <p>Task management application. Add, edit, delete, and filter tasks. Uses JSON for data storage.</p>
+                        <div class="tags">
+                            <span>JavaFX</span>
+                            <span>Java</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/quansi0817/ToDoListProject" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="./photo2.png" alt="TrailGo App Design">
+                    </div>
+                    <div class="project-info">
                         <h3>"TrailGo" App Design</h3>
-                        <p>In an app design project, "TrailGo" was developed to address the increasing interest in hiking. Using a data-driven method with surveys, we pinpointed features such as trail searches, real-time recording, and geo-tagged photos. After initial testing with users, we identified areas for refinement, ensuring an intuitive experience for hikers.</p>
-                        <p><strong>Key Technologies:</strong> Adobe XD, Excel, Google Forms</p>
-                        <a href="https://xd.adobe.com/view/b872281d-5659-4933-a2ac-7969b9d76c55-ed21/?fullscreen&hints=off" target="_blank" aria-label="View TrailGo App Design Mockup on Adobe XD">View Adobe XD Mockup</a>
+                        <p>Hiking app design based on user research. Features trail search, recording, and geo-tagged photos.</p>
+                        <div class="tags">
+                            <span>Adobe XD</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://xd.adobe.com/view/b872281d-5659-4933-a2ac-7969b9d76c55-ed21/?fullscreen&hints=off" target="_blank"><i class="fas fa-external-link-alt"></i> View Mockup</a>
+                        </div>
                     </div>
                 </article>
-            </div>
 
-
-            <div class="projects-container">
-                <article class="project">
-                    <div class="project-image">
-                        <img src="./photo3.jpg" alt="Project Image of CMS Project">
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-img">
+                        <img src="./photo3.jpg" alt="CMS Project">
                     </div>
-                    <div class="project-details">
-                        <h3>"Customer Management System (CMS)" Project</h3>
-                        <p>The "Customer Management System" (CMS) optimizes customer management and sales processes using Spring Boot for robust backend operations and HTML/CSS for a responsive user interface. Featuring role-based access, it allows admins comprehensive control over data, while sales personnel access only pertinent customer information. Initial testing helped refine its features, enhancing its usability and effectiveness.</p>
-                        <p><strong>Key Technologies:</strong> Spring Boot, HTML, CSS</p>
-                        <a href="https://github.com/quansi0817/CMS-PROJECT/tree/main" target="_blank" aria-label="View CMS project on GitHub">View on GitHub</a>
+                    <div class="project-info">
+                        <h3>Customer Management System</h3>
+                        <p>Spring Boot application for sales processes. Features role-based access for admins and sales personnel.</p>
+                        <div class="tags">
+                            <span>Spring Boot</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/quansi0817/CMS-PROJECT/tree/main" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
                     </div>
                 </article>
-            </div>
 
-            
-        </section>
-    </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-wrapper">
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sichao-quan-279395281/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/quansi0817/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="mailto:your.email@example.com" class="btn btn-primary">Say Hello</a>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>Sichao Quan Portfolio &copy; 2023. Visit my <a href="https://github.com/quansi0817" target="_blank" aria-label="Visit my GitHub profile">GitHub</a></p>
+        <p>&copy; 2026 Sichao Quan. All rights reserved.</p>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
