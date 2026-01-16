@@ -7,7 +7,7 @@
     <title>Sichao Quan | Portfolio</title>
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,292 +17,234 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Sichao<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <h1>Hi, I'm <span class="highlight">Sichao Quan</span></h1>
-            <h2>Data Analyst | ETL Developer | Software Developer</h2>
-            <p>Passionate coder. Curious analyst. Lifelong learner.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Recent <strong>Software Development & Network Engineering</strong> graduate from Sheridan College (<strong>3.94 GPA</strong>) with a developer's background. 
-                    </p>
-                    <p>
-                        I specialize in building <strong>ETL pipelines</strong> and optimizing AWS architectures, while leveraging <strong>Python, SQL, Advanced Excel, and BI tools</strong> to analyze complex datasets.
-                    </p>
-                    <p>
-                        I combine strong engineering fundamentals with analytical skills to deliver actionable insights, now seeking a <strong>Data Analyst</strong> position.
-                    </p>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-item"><i class="fab fa-java"></i> Java</div>
-                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
-                    <div class="skill-item"><i class="fas fa-cloud"></i> Cloud Computing</div>
-                    <div class="skill-item"><i class="fas fa-network-wired"></i> Networking</div>
-                    <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</div>
-                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-title">
-                <h2>Experience</h2>
-            </div>
-            <div class="timeline">
+    
+    <div class="main-wrapper">
+        <!-- Sidebar / Left Column -->
+        <aside class="profile-sidebar">
+            <div class="profile-header">
+                <h1>Sichao Quan</h1>
+                <h2>Data Analyst | ETL Developer</h2>
+                <p class="tagline">Passionate coder. Curious analyst.</p>
                 
-                <!-- Experience Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Sep 2025 - Nov 2025</div>
-                    <div class="timeline-content">
-                        <h3>Software Developer (Contract Part-time)</h3>
-                        <h4>UHN (University Health Network)</h4>
-                        <p>Hybrid</p>
-                    </div>
+                <div class="contact-info">
+                    <a href="mailto:your.email@example.com" class="contact-item"><i class="fas fa-envelope"></i> Email Me</a>
+                    <a href="https://www.linkedin.com/in/sichao-quan-279395281/" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/quansi0817/" target="_blank" class="contact-item"><i class="fab fa-github"></i> GitHub</a>
                 </div>
-
-                <!-- Experience Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jul 2025 - Aug 2025</div>
-                    <div class="timeline-content">
-                        <h3>Software Developer (Co-op)</h3>
-                        <h4>UHN (University Health Network)</h4>
-                        <p>Hybrid</p>
-                    </div>
-                </div>
-
-                <!-- Experience Item 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">May 2025 - Jun 2025</div>
-                    <div class="timeline-content">
-                        <h3>Machine/Deep Learning Developer (Co-op)</h3>
-                        <h4>LocoMobi World</h4>
-                        <p>Hybrid | Python</p>
-                    </div>
-                </div>
-
-                <!-- Experience Item 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2024 - Apr 2024</div>
-                    <div class="timeline-content">
-                        <h3>Applied Computing Tutor (Co-op)</h3>
-                        <h4>Sheridan College</h4>
-                        <p>Oakville, Ontario, Canada</p>
-                    </div>
-                </div>
-
-                <!-- Experience Item 5 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Aug 2018 - May 2021</div>
-                    <div class="timeline-content">
-                        <h3>Project Manager</h3>
-                        <h4>SMZDM</h4>
-                        <p>Beijing, China | On-site</p>
-                    </div>
-                </div>
-
-                <!-- Experience Item 6 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Nov 2016 - Aug 2018</div>
-                    <div class="timeline-content">
-                        <h3>Account Manager</h3>
-                        <h4>Dell Technologies</h4>
-                        <p>Beijing, China | On-site</p>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
+            <div class="sidebar-section about-section">
+                <h3>About Me</h3>
+                <p>
+                    Recent <strong>Software Development & Network Engineering</strong> graduate from Sheridan College (<strong>3.94 GPA</strong>).
+                </p>
+                <p>
+                    I specialize in <strong>ETL pipelines</strong>, AWS architectures, and data analysis using <strong>Python, SQL, and BI tools</strong>.
+                </p>
             </div>
-            <div class="projects-grid">
-                
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-img">
-                        <img src="./Anomaly_Injection_Process_With_GANs_Training.jpg" alt="EV Battery Anomaly Detection">
-                    </div>
-                    <div class="project-info">
-                        <h3>Generative Anomaly Detection</h3>
-                        <p>Using GANs to detect anomalies in EV battery data. Collaborated with Rogers to test on Kia EV6 data with injected anomalies.</p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>Pandas</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/quansi0817/Generative-Anomaly-Detection-for-Electric-Vehicle-Batteries/blob/main/README.ipynb" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </article>
 
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-img">
-                        <img src="./rental_price_predictor.jpg" alt="Canada Rental Price Predictor">
-                    </div>
-                    <div class="project-info">
-                        <h3>Rental Price Predictor</h3>
-                        <p>Web app to predict rental prices in Canada. Input details like city and bedrooms to get real-time predictions and visualizations.</p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>Dash</span>
-                            <span>Plotly</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/quansi0817/Rental-Price-Forecasting-Dashboard-for-Canada" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-img">
-                        <img src="./caps.jpg" alt="Caps Lock Indicator">
-                    </div>
-                    <div class="project-info">
-                        <h3>Caps Lock Indicator</h3>
-                        <p>MacOS app showing Caps Lock status in the menu bar. Displays a visual indicator for active/inactive states.</p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>rumps</span>
-                            <span>MacOS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/quansi0817/Cap_Lock_indicator" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 4 -->
-                <article class="project-card">
-                    <div class="project-img">
-                        <img src="./photo.png" alt="ToDoList Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>ToDoList App</h3>
-                        <p>Task management application. Add, edit, delete, and filter tasks. Uses JSON for data storage.</p>
-                        <div class="tags">
-                            <span>JavaFX</span>
-                            <span>Java</span>
-                            <span>JSON</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/quansi0817/ToDoListProject" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 5 -->
-                <article class="project-card">
-                    <div class="project-img">
-                        <img src="./photo2.png" alt="TrailGo App Design">
-                    </div>
-                    <div class="project-info">
-                        <h3>"TrailGo" App Design</h3>
-                        <p>Hiking app design based on user research. Features trail search, recording, and geo-tagged photos.</p>
-                        <div class="tags">
-                            <span>Adobe XD</span>
-                            <span>UI/UX</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://xd.adobe.com/view/b872281d-5659-4933-a2ac-7969b9d76c55-ed21/?fullscreen&hints=off" target="_blank"><i class="fas fa-external-link-alt"></i> View Mockup</a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 6 -->
-                <article class="project-card">
-                    <div class="project-img">
-                        <img src="./photo3.jpg" alt="CMS Project">
-                    </div>
-                    <div class="project-info">
-                        <h3>Customer Management System</h3>
-                        <p>Spring Boot application for sales processes. Features role-based access for admins and sales personnel.</p>
-                        <div class="tags">
-                            <span>Spring Boot</span>
-                            <span>HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/quansi0817/CMS-PROJECT/tree/main" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-            </div>
-            <div class="contact-wrapper">
-                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/sichao-quan-279395281/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/quansi0817/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:your.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <div class="sidebar-section skills-section">
+                <h3>Skills</h3>
+                <div class="skills-wrap">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">ETL</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Tableau/PowerBI</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Git</span>
                 </div>
-                <a href="mailto:your.email@example.com" class="btn btn-primary">Say Hello</a>
             </div>
-        </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 Sichao Quan. All rights reserved.</p>
-    </footer>
+            <div class="sidebar-section education-section">
+                <h3>Education</h3>
+                <div class="edu-item">
+                    <h4>Sheridan College</h4>
+                    <p>Software Development & Network Engineering</p>
+                    <p class="sub-text">GPA: 3.94</p>
+                </div>
+            </div>
+        </aside>
 
-    <script src="script.js"></script>
+        <!-- Main Content / Right Column -->
+        <main class="content-area">
+            
+            <!-- Projects Section -->
+            <section id="projects" class="content-section-transparent">
+                <h2 class="section-heading"><i class="fas fa-code-branch"></i> Projects</h2>
+                <div class="projects-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="./Anomaly_Injection_Process_With_GANs_Training.jpg" alt="Generative Anomaly Detection">
+                            <a href="https://github.com/quansi0817/Generative-Anomaly-Detection-for-Electric-Vehicle-Batteries/blob/main/README.ipynb" target="_blank" class="card-link" aria-label="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3>Generative Anomaly Detection</h3>
+                            <p>GANs based anomaly detection for EV batteries. Collaborated with Rogers using Kia EV6 data.</p>
+                            <div class="card-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="./rental_price_predictor.jpg" alt="Rental Price Predictor">
+                            <a href="https://github.com/quansi0817/Rental-Price-Forecasting-Dashboard-for-Canada" target="_blank" class="card-link" aria-label="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3>Rental Price Predictor</h3>
+                            <p>Real-time rental price prediction dashboard for Canadian cities.</p>
+                            <div class="card-tags">
+                                <span>Python</span>
+                                <span>Dash</span>
+                                <span>Plotly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="./caps.jpg" alt="Caps Lock Indicator">
+                            <a href="https://github.com/quansi0817/Cap_Lock_indicator" target="_blank" class="card-link" aria-label="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3>Caps Lock Indicator</h3>
+                            <p>MacOS menu bar app for Caps Lock status visualization.</p>
+                            <div class="card-tags">
+                                <span>Python</span>
+                                <span>rumps</span>
+                                <span>MacOS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="./photo.png" alt="ToDoList App">
+                            <a href="https://github.com/quansi0817/ToDoListProject" target="_blank" class="card-link" aria-label="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3>ToDoList App</h3>
+                            <p>JavaFX task manager with JSON data persistence.</p>
+                            <div class="card-tags">
+                                <span>JavaFX</span>
+                                <span>Java</span>
+                                <span>JSON</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="./photo2.png" alt="TrailGo App Design">
+                            <a href="https://xd.adobe.com/view/b872281d-5659-4933-a2ac-7969b9d76c55-ed21/?fullscreen&hints=off" target="_blank" class="card-link" aria-label="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3>"TrailGo" App Design</h3>
+                            <p>Hiking app design based on user research. Features trail search and geo-tagged photos.</p>
+                            <div class="card-tags">
+                                <span>Adobe XD</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card">
+                        <div class="card-image">
+                            <img src="./photo3.jpg" alt="CMS Project">
+                            <a href="https://github.com/quansi0817/CMS-PROJECT/tree/main" target="_blank" class="card-link" aria-label="View Project">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3>CMS Project</h3>
+                            <p>Spring Boot Customer Management System with role-based access.</p>
+                            <div class="card-tags">
+                                <span>Spring Boot</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <h2 class="section-heading"><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="timeline-compact">
+                    
+                    <div class="timeline-row">
+                        <div class="timeline-time">Sep 2025 - Nov 2025</div>
+                        <div class="timeline-data">
+                            <h3>Software Developer (Contract)</h3>
+                            <h4>UHN (University Health Network)</h4>
+                            <p>Developing healthcare software solutions. (Hybrid)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row">
+                        <div class="timeline-time">Jul 2025 - Aug 2025</div>
+                        <div class="timeline-data">
+                            <h3>Software Developer (Co-op)</h3>
+                            <h4>UHN (University Health Network)</h4>
+                            <p>Assisted in backend development and system optimization. (Hybrid)</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row">
+                        <div class="timeline-time">May 2025 - Jun 2025</div>
+                        <div class="timeline-data">
+                            <h3>Machine Learning Developer</h3>
+                            <h4>LocoMobi World</h4>
+                            <p>Developed Python-based Deep Learning models for traffic analysis.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-row">
+                        <div class="timeline-time">Jan 2024 - Apr 2024</div>
+                        <div class="timeline-data">
+                            <h3>Applied Computing Tutor</h3>
+                            <h4>Sheridan College</h4>
+                            <p>Mentored students in programming concepts and debugging.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-row">
+                        <div class="timeline-time">2016 - 2021</div>
+                        <div class="timeline-data">
+                            <h3>Project & Account Manager</h3>
+                            <h4>SMZDM & Dell Technologies</h4>
+                            <p>Managed enterprise accounts and led cross-functional project teams in Beijing.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
 </body>
 </html>
