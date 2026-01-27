@@ -461,4 +461,13 @@ a {
     .exp-info {
         text-align: left;
     }
+
+    /* Fix for project images on mobile */
+    .project-media {
+        height: auto;
+    }
+    
+    .project-media img {
+        height: auto;
+    }
 }
